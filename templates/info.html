@@ -1,0 +1,16 @@
+<!--base的扩展内容-->
+{% extends "base.html" %}
+
+根据block的名字找到填充的位置，block可以写多个，但后面的名字不能重复
+{% block container %}
+
+<p>
+
+    编号<input type="text" name="id" value="{{ content.id }}"><br />
+    姓名<input type="text" name="name" value="{{ content.name }}"><br />
+    生日<input type="text" name="birthday" value="{{ content.birthday }}"><br />
+    城市<input type="text" name="city" value="{{ content.city }}"><br />
+
+</p>
+<a href="/mod?id={{ content.id }}">修改信息</a>
+{% end %}

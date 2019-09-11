@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改数据</title>
+</head>
+<body>
+<strong>修改用户信息</strong>
+{{ content.name }}
+<form action="/mod" method="POST" >
+            id：<input type ="text" name="uid" value="{{ content.id }}">
+            <br>
+            姓名：<input type ="text" name="name" value="{{ content.name}}" >
+            <br>
+            城市：<input type ="text" name="city" value="{{ content.city}}" >
+            <br>
+            <input type="submit"></form>
+</body>
+</html>

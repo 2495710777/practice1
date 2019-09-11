@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lwq</title>
+        <style>
+            body{
+                width:900px;
+                margin:0 auto;
+            }
+            .content {
+                float:left;
+                width:700px
+            }
+            .sidebar{
+                float:left;
+                width:200px
+            }
+        </style>
+    </head>
+
+    <body>
+<!--        导航区域-->
+        <div class="navbar">
+            <a href="/">首页</a>
+            <a href="/?id=0">全部</a>
+            <a href="/mod">修改</a>
+            <a href="#">体育</a>
+            <a href="#">汽车</a>
+        </div>
+
+        <hr />
+<!--        内容区域-->
+        <div class="content" style="font-size:30px">
+<!--            声明以后要在此处拼一些东西进来-->
+            {% block container %} 啥都没有 {% end %}
+
+        </div>
+
+<!--        边栏区域-->
+        <div class="sidebar">
+            <ul>
+                {% block alluser %} 暂时没有数据 {% end %}
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+
+{% block alluser %}
+
+<p>
+    快捷连接
+    <ul>
+
+        {% for i,x in enumerate(content) %}
+            <li><a href="?id={{ i+1 }}">{{ x }}</a></li>
+        {% end %}
+    </ul>
+
+</p>
+
+{% end %}
+{% block container %}
+    {% for i in aaaa %}
+    <p> {{ i }} </p>
+    {% end %}
+{% end %}
